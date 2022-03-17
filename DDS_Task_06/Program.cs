@@ -76,7 +76,7 @@ namespace DDS_Task_06
                         while (numberDossier < 0 && numberDossier > arrName.Length);
 
 
-                        if (numberDossier > 0 && numberDossier < arrName.Length)
+                        if (numberDossier > 0 && numberDossier <= arrName.Length)
                         {
                             deleteDossier(ref arrName, ref arrPosition, numberDossier);
                             Console.WriteLine("\nДосье успешно удалено! ");
